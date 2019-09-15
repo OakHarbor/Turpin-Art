@@ -1229,7 +1229,7 @@ footer {
 
     .footer-item img {
         margin: 0;
-        height: 90px;
+        height: 90px !important;
     }
 
     .footer-item {
