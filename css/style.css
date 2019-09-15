@@ -1,0 +1,1083 @@
+/* Core Styles */
+.container {
+    padding: 0 1.5em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#nav-topper {
+    display: none;
+}
+
+@font-face {
+    font-family: 'FuturaBT-Light';
+    src: url('../fonts/FuturaBT-Light.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/Futura-CondensedLight.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+p {
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: 'FuturaBT-Light', sans-serif;
+    color: #767676;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    overflow-y: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+body, html, h1, h2, h3, h4, h5, h6 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+    color: #414141;
+}
+
+#noScroll {
+    overflow: scroll;
+}
+
+.toggle-img {
+    display: none;
+}
+
+#desktop-position {
+    display: none;
+}
+
+#desktop-partners {
+    display: none;
+}
+
+.btn-toggle {
+    display: none;
+}
+
+.quote,
+.call {
+    display: none;
+}
+
+.navbar-links {
+    display: none;
+}
+
+#logo {
+    display: none;
+}
+
+#call-strip {
+    display: none;
+}
+
+.button-solid {
+    display: inline-block;
+    background: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 12px 40px;
+    color: #000;
+    text-decoration: none;
+    animation-delay: 0.6s;
+    border-radius: 5px;
+    white-space: nowrap;
+    float: left;
+}
+
+.button-solid:hover {
+    background: #31aece;
+    border-color: #31aece;
+    color: #fff;
+    transition: background 0.4s ease 0s;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+.button-transparent {
+    display: inline-block;
+    background: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 6px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    animation-delay: 0.6s;
+    border-radius: 5px;
+    white-space: nowrap;
+    float: left;
+    height: 40px;
+}
+
+.button-transparent a:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #DB170D;
+    transition: background 0.4s ease 0s;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+/*-- -------------------------- -->
+<---        NAVIGATION          -->
+<--- -------------------------- -*/
+
+.navbar {
+    background-color: transparent;
+    width: 100%;
+    height: 78px;
+    position: relative;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+.open-slide {
+    float: right;
+    margin-right: 1.5em;
+    display: block;
+    z-index: 4;
+    position: absolute;
+    right: 0;
+    top: 25px;
+
+}
+
+.side-nav {
+    width: 0;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    transition: 0.5s;
+    right: -1px;
+    text-align: right;
+    z-index: 15;
+}
+
+#side-hidden {
+    background-color: #103F54;
+    opacity: 0.6;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    left: 0
+    margin: 0;
+    width: 0;
+    z-index: 7;
+}
+
+.side-nav ul {
+    display: block;
+    text-decoration: none;
+    z-index: 6;
+    /* Added this */
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+
+/* Added this */
+.nav-item {
+    display:block;
+    margin: 0;
+}
+
+.side-nav ul a {
+    position: relative;
+    width: 100%;
+    /* Changed this */
+    /* padding: 10px 130px 10px 100px;*/
+    padding: 20px 15px;
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    z-index: 6;
+    /* Removed this */
+    /* right: 30px; */
+    text-align: right;
+    /* Added these */
+    display: block;
+    box-sizing: border-box;  
+    font-weight: 500;
+    font-family: 'FuturaBT-Light', sans-serif;
+    font-size: 16px;
+}
+
+.btn-close {
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    /* Changed this */
+    /* left: 22px; */
+    left: 0;
+    font-size: 36px !important;
+    text-decoration: none;
+    color: #2F2E2E;
+    right: 7px;
+    padding: 0;
+}
+
+.btn-close a:hover {
+    color: #444;
+    cursor: pointer;
+    background: #fff;
+}
+
+.side-nav .btn-close:hover {
+    color: #fff
+}
+
+.side-nav li a:hover {
+    color: #31AECE;
+}
+
+.side-active {
+    color: #31AECE !important;
+}
+
+.mobile-logo {
+    position: relative;
+    right: 0%;
+    padding: 0;
+}
+
+.mobile-logo img {
+    width: 200px;
+    position: relative;
+    top: 8px;
+}
+
+.desktop-logo {
+    display: none;
+}
+
+#side-menu {
+    margin: 0;
+    width: 0;
+    transition: .5s;
+}
+
+#side-menu ul {
+    position: relative;
+    top: -10px;
+}
+
+#on-top {
+    display: none;
+    font-size: .9em;
+}
+
+#bottom-menu {
+    display: flex;
+    flex-direction: row;
+    z-index: 7;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: absolute;
+}
+
+.bottom {
+    width: 50%;
+    background: white;
+    bottom: 0;
+    position: fixed;
+    height: 60px;
+    display: block;
+    left: 0;
+    border-top: 1px solid #a9a9a9;
+    border-right: 1px solid #a9a9a9;
+}
+
+.bottom2 {
+    width: 50%;
+    background: white;
+    bottom: 0;
+    position: fixed;
+    height: 60px;
+    display: block;
+    position: fixed;
+    right: 0;
+    border-top: 1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+}
+
+#bottom-menu i {
+    padding: 20px 70px;
+    color: #2F2E2E;
+    text-align: center;
+    position: relative;
+    /* center icon vertically */
+}
+
+/*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
+
+#landing {
+    height: 100vh;
+    background: url("../images/landing-img-compressor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing-content {
+    padding-top: 150px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.landing-content img {
+    width: 100%;
+    color: #fff;
+}
+
+.landing-line {
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 65%;
+}   
+
+.landing-content h1 {
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 66%;
+    right: 2%;
+    width: auto;
+    letter-spacing: 4px;
+    font-family: 'FuturaBT-Light', sans-serif;
+}
+
+.button-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.landing-button {
+    border-color: #fff;
+    color: #fff;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/*-- -------------------------- -->
+<---        PHILOSOPHY          -->
+<--- -------------------------- -*/
+
+.philosophy-content {
+    padding: 50px 0;
+}
+
+.philosophy-content,
+.philosophy-content h2,
+.philosophy-content h3 {
+    text-align: left;
+}
+
+.philosophy-content h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #31AECE;
+}
+
+.philosophy-content h3 {
+    font-size: 25px;
+}
+
+.philosophy-line {
+    height: 1px;
+    width: 100%;
+    background: #000;
+    margin: 7px auto;
+}
+
+.black-button {
+    color: #000;
+    border: 1px solid #000;
+    font-family: 'FuturaBT-Light', sans-serif;
+    font-size: 18px;
+    padding: 9px 27px;
+    margin-bottom: 40px;
+}
+
+img.phil-img {
+    position: relative;
+    right: -10%;
+    width: 90%;
+}
+
+/*-- -------------------------- -->
+<---        SPOTLIGHT 1         -->
+<--- -------------------------- -*/
+
+.para-spotlight {
+    height: 200px;
+}
+
+#spotlight-1 {
+    background: url("../images/house-compressor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-- -------------------------- -->
+<---         LANDSCAPES         -->
+<--- -------------------------- -*/
+
+.landscape-content {
+    padding-bottom: 20px;
+}
+
+.landscape-images img {
+    width: 100%;
+    height: 160px;
+    margin: 5px auto;
+}
+
+.land-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px auto;
+    margin-bottom: 50px;
+}
+
+/*-- -------------------------- -->
+<---        SPOTLIGHT 1         -->
+<--- -------------------------- -*/
+
+#spotlight-2 {
+    background: url("../images/boat-compressor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-- -------------------------- -->
+<---          ETCHINGS          -->
+<--- -------------------------- -*/
+
+.etch-content {
+    padding-bottom: 20px;
+}
+
+.etch-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/*-- -------------------------- -->
+<---        SPOTLIGHT 3         -->
+<--- -------------------------- -*/
+
+#spotlight-3 {
+    background: url("../images/landscape-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-- -------------------------- -->
+<---           ABOUT            -->
+<--- -------------------------- -*/
+
+.about-content {
+    padding-bottom: 20px;
+}
+
+.about-content img {
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 50px;
+}
+
+.about-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/*-- -------------------------- -->
+<---           FOOTER           -->
+<--- -------------------------- -*/
+
+footer {
+    background: url("../images/footer-background-compressor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footer-item {
+    width: 250px;
+    margin-top: 40px;
+}
+
+.footer-item:first-child {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-item h3 {
+    text-align: left;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer-item p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+}
+
+.item-line {
+    height: 1px;
+    width: 70%;
+    background: #fff;
+    margin: 7px 0;
+}
+
+.footer-dark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #103F54;
+    opacity: .8;
+    z-index: 5;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 6;
+}
+
+.footer-content img {
+    width: 200px;
+    margin-top: 50px;
+    position: relative;
+    left: 0;
+}
+
+.branding-line {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    margin: 40px 0 15px 0;
+    position: relative;
+    z-index: 6;
+}
+
+.branding {
+    padding: 10px 0 20px 0;
+}
+
+.branding p {
+    color: #fff;
+    position: relative;
+    z-index: 6;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+.branding a {
+    color: #31aece
+}
+
+.branding a:hover {
+    cursor: pointer;
+    opacity: .5;
+    text-decoration: none;
+}
+
+/*Iphone X and higer */
+@media screen and (min-width: 375px) and (max-width: 499px) {
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    .landing-content img {
+        padding-top: 80px;
+    }
+
+    .landing-line {
+        top: 338px;
+    }
+
+    .landing-content h1 {
+        top: 341px;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+
+    .side-nav ul a {
+        font-size: 30px;
+    }
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    .landing-content {
+        padding-top: 280px;
+    }
+
+    .landing-line {
+        top: 500px;
+        height: 2px;
+    }
+
+    .landing-content h1 {
+        font-size: 30px;
+        top: 503px;
+    }
+
+    /*-- -------------------------- -->
+    <---        PHILOSOPHY          -->
+    <--- -------------------------- -*/
+
+    .philosophy-content {
+        padding-top: 120px;
+        width: 430px;
+    }
+
+    /*-- -------------------------- -->
+    <---        SPOTLIGHT-1         -->
+    <--- -------------------------- -*/
+
+    .para-spotlight {
+        height: 500px;
+    }
+
+    /*-- -------------------------- -->
+    <---         LANDSCAPE          -->
+    <--- -------------------------- -*/
+
+    .landscape-content {
+        margin-left: auto;
+    }
+
+    .landscape-content p,
+    .landscape-content h3,
+    .landscape-content h2 {
+        text-align: right;
+    }
+
+    .landscape-images img {
+        height: 350px;
+        margin: 10px 0;
+    }
+
+    /*-- -------------------------- -->
+    <---           ABOUT            -->
+    <--- -------------------------- -*/
+
+    .about-content {
+        margin: auto;
+    }
+
+    .about-content p,
+    .about-content h2,
+    .about-content h3 {
+        text-align: center;
+    }
+
+    .about-line {
+        margin: auto;
+    }
+
+    /*-- -------------------------- -->
+    <---          FOOTER            -->
+    <--- -------------------------- -*/
+
+    .footer-content {
+        height: auto;
+    }
+
+    .footer-item {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-item p,
+    .footer-item h3 {
+        text-align: center;
+    }
+
+    .item-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+
+@media screen and (min-width: 1025px) {
+
+    .container {
+        max-width: 980px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .black-button {
+        font-size: 16px;
+    }
+
+    /*-- -------------------------- -->
+    <---         NAVIGATION         -->
+    <--- -------------------------- -*/
+
+    .topper-content i {
+        float: left;
+        color: #fff;
+        margin: 0px 10px 0 0;
+    }
+
+    .topper-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #nav-topper {
+        display: block;
+    }
+
+    .phone {
+        display: flex;
+        align-items: center;
+    }
+    
+    #nav-topper {
+        height: 40px;
+        background: #414141;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .topper-content p {
+        float: left;
+        margin: 0px 65px 0px 0px;
+        font-size: 10px;
+        color: #eaeaea;
+        width: auto;
+    }
+
+    p.topper-content {
+        font-size: .8em;
+    }
+
+    .topper-content p:last-child {
+        margin-right: 0;
+    }
+
+    #bottom-menu {
+        display: none;
+    }
+
+    #side-menu {
+        display: none;
+    }
+
+    .open-slide {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: none !important;
+    }
+
+    .desktop-logo {
+        display: block;
+        float: left;
+        height: 100px;
+    }
+
+    .desktop-logo img {
+        margin-top: 13%;
+        margin-bottom: auto;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar-links {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        bottom: 15px;
+        list-style: none;
+    }
+
+    .navbar-menu {
+        height: 100px;
+    }
+
+    .navbar-links li {
+        float: left;
+        margin: 6.5% 30px 0 30px;
+    }
+
+    .navbar-links li a {
+        text-decoration: none;
+        color: #d3d3d3;
+        opacity: .7;
+        transition: color 0.4s ease 0s;
+        font-size: 25px;
+        font-weight: normal;
+        cursor: pointer;
+        font-family: 'FuturaBT-Light', sans-serif;
+    }
+
+    ul.navbar-links a:hover {
+        color: #31aece;
+    }
+
+    #active {
+        color: #fff;
+        opacity: 1;
+    }
+
+    ul.navbar-links {
+        float: right;
+        text-align: right;
+    }
+
+    .navbar-links {
+        margin-right: 0;
+    }
+
+    .navbar-links li:last-child {
+        margin-right: 0;
+    }
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    #landing {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .landing-content {
+        padding-top: 250px;
+    }
+
+    .landing-line {
+        height: 3px;
+        top: 540px;
+    }
+
+    .landing-content h1 {
+        font-size: 40px;
+        top: 545px;
+        letter-spacing: 7px;
+        font-weight: normal;
+    }
+
+    .button-solid {
+        height: 75px;
+        width: 270px;
+        font-size: 25px;
+    }
+
+    .landing-button {
+        font-size: 16px;
+        width: auto;
+        height: auto; 
+    }
+
+    /*-- -------------------------- -->
+    <---         PHILOSOPHY         -->
+    <--- -------------------------- -*/
+
+    .remove {
+        display: none;
+    }
+
+    #philosophy {
+        position: relative;
+        height: 650px;
+    }
+
+    .toggle-img {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .philosophy-content {
+        width: 450px;
+        padding-top: 150px;
+        margin-right: auto;
+        position: relative;
+    }
+
+    img.phil-img {
+        width: 40%;
+        height: inherit;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .black-button {
+        font-size: 16px;
+        width: auto;
+        height: auto;
+    }
+
+    .para-spotlight {
+        height: 800px;
+    }
+
+    #spotlight-1,
+    #spotlight-2,
+    #spotlight-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*-- -------------------------- -->
+    <---          LANDSCAPE         -->
+    <--- -------------------------- -*/
+
+    .landscape-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .landscape-images img {
+        width: 48%;
+        margin: 5px;
+        height: 200px;
+    }
+    
+    .landscape-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+    }
+
+    .landscape-content h2,
+    .landscape-content h3,
+    .landscape-content p {
+        text-align: center;
+    }
+
+    .landscape-content h3 {
+        font-size: 45px;
+    }
+
+    .landscape-content > .philosophy-line {
+        margin: 15px auto;
+    }
+
+    /*-- -------------------------- -->
+    <---           ABOUT            -->
+    <--- -------------------------- -*/
+    
+    #about {
+        height: auto;
+    }
+
+    .about-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-content img {
+        width: 500px;
+    }
+
+    .btn-toggle {
+        display: block;
+    }
+
+    /*-- -------------------------- -->
+    <---           FOOTER           -->
+    <--- -------------------------- -*/
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+
+    .footer-item img {
+        margin: 0;
+    }
+
+    .footer-item {
+        height: 190px;
+        width: auto;
+        max-width: 200px;
+    }
+
+    .footer-item:first-child {
+        height: auto;
+        margin: 0;
+    }
+
+}
