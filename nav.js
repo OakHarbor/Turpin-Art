@@ -1,5 +1,6 @@
 function toggleNav() {
     document.getElementById("side-menu").style.display = "block";
+    document.getElementById("side-menu").style.position = "fixed";
     document.getElementById("side-menu").style.width = "60%";
     document.getElementById("side-hidden").style.width = "50%";
     document.getElementById("noScroll").style.overflow = "hidden";
