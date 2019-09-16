@@ -3,6 +3,7 @@ function toggleNav() {
     document.getElementById("side-menu").style.width = "60%";
     document.getElementById("side-hidden").style.width = "50%";
     document.getElementById("noScroll").style.position = "fixed";
+    document.getElementById("noScroll").style.overflowX = "hidden";
     document.getElementById("btn-close").style.color = "#000000";
     document.getElementById("btn-close").style.background = "white";
     document.getElementById("on-top").style.display = "block";
