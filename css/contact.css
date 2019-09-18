@@ -163,7 +163,7 @@ body, html, h1, h2, h3, h4, h5, h6 {
     float: right;
     margin-right: 1.5em;
     display: block;
-    z-index: 4;
+    z-index: 5;
     position: absolute;
     right: 0;
     top: 25px;
@@ -347,210 +347,36 @@ body, html, h1, h2, h3, h4, h5, h6 {
 <--- -------------------------- -*/
 
 #landing {
-    height: 100vh;
-    background: url("../images/landscape-3-compressor-crop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.landing-content {
-    padding-top: 150px;
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-.landing-content img {
-    width: 100%;
-    color: #fff;
-}
-
-.landing-line {
-    height: 1px;
-    width: 100%;
-    background: #fff;
-    position: absolute;
-    top: 65%;
-}   
-
-.landing-content h1 {
-    color: #fff;
-    font-size: 14px;
-    position: absolute;
-    top: 66%;
-    right: 2%;
-    width: auto;
-    letter-spacing: 4px;
-    font-family: 'FuturaBT-Light', sans-serif;
-}
-
-.button-center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.landing-button {
-    border-color: #fff;
-    color: #fff;
-    margin: auto;
-    margin-top: 50px;
-}
-
-/*-- -------------------------- -->
-<---        PHILOSOPHY          -->
-<--- -------------------------- -*/
-
-.philosophy-content {
-    padding: 50px 0;
-}
-
-.philosophy-content,
-.philosophy-content h2,
-.philosophy-content h3 {
-    text-align: left;
-}
-
-.philosophy-content h2 {
-    font-size: 15px;
-    font-weight: 700;
-    color: #31AECE;
-}
-
-.philosophy-content h3 {
-    font-size: 25px;
-}
-
-.philosophy-line {
-    height: 1px;
-    width: 100%;
-    background: #000;
-    margin: 7px auto;
-}
-
-.black-button {
-    color: #000;
-    border: 1px solid #000;
-    font-family: 'FuturaBT-Light', sans-serif;
-    font-size: 18px;
-    padding: 9px 27px;
-    margin-bottom: 40px;
-}
-
-img.phil-img {
-    position: relative;
-    right: -10%;
-    width: 90%;
-}
-
-/*-- -------------------------- -->
-<---        SPOTLIGHT 1         -->
-<--- -------------------------- -*/
-
-.para-spotlight {
-    height: 200px;
-}
-
-#spotlight-1 {
-    background: url("../images/house-compressor.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/*-- -------------------------- -->
-<---         LANDSCAPES         -->
-<--- -------------------------- -*/
-
-.landscape-content {
-    padding-bottom: 20px;
-}
-
-.landscape-images img {
-    width: 100%;
-    height: 160px;
-    margin: 5px auto;
-}
-
-.land-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 15px auto;
-    margin-bottom: 50px;
-}
-
-/*-- -------------------------- -->
-<---        SPOTLIGHT 1         -->
-<--- -------------------------- -*/
-
-#spotlight-2 {
-    background: url("../images/boat-compressor.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/*-- -------------------------- -->
-<---          ETCHINGS          -->
-<--- -------------------------- -*/
-
-.etch-content {
-    padding-bottom: 20px;
-}
-
-.etch-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 50px;
-}
-
-/*-- -------------------------- -->
-<---        SPOTLIGHT 3         -->
-<--- -------------------------- -*/
-
-#spotlight-3 {
-    background: url("../images/landscape-4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/*-- -------------------------- -->
-<---           ABOUT            -->
-<--- -------------------------- -*/
-
-.about-content {
-    padding-bottom: 20px;
-}
-
-.about-content img {
-    width: 100%;
-    padding-top: 0;
-    margin-bottom: 50px;
-}
-
-.group {
+    background: url('../images/landscape-3-compressor-crop.jpg');
+    height: 50vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-}
-
-.about-button {
-    display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 50px;
+    position: relative;
+    z-index: -2;
 }
 
-.remove {
-    display: none;
-    margin: auto;
+.hero-dark {
+    background: #000;
+    opacity: .5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
-.btn-toggle {
+.hero-content h1 {
+    color: #ffff;
+    position: relative;
+    z-index: 3;
 }
+
+
+
+/*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
 
 /*-- -------------------------- -->
 <---           FOOTER           -->
@@ -565,7 +391,7 @@ footer {
 
 .footer-item {
     width: 250px;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .footer-item:first-child {
@@ -647,109 +473,10 @@ footer {
     text-decoration: none;
 }
 
-/*Iphone X and higer */
-@media screen and (min-width: 375px) and (max-width: 499px) {
-
-    /*-- -------------------------- -->
-    <---          LANDING           -->
-    <--- -------------------------- -*/
-
-    .landing-content img {
-        padding-top: 80px;
-    }
-
-    .landing-line {
-        top: 338px;
-    }
-
-    .landing-content h1 {
-        top: 341px;
-    }
-
-}
-
-@media screen and (min-width: 500px) and (max-width: 991px) {
+@media screen and (min-width: 500px) and (max-width: 1024px) {
 
     .side-nav ul a {
         font-size: 30px;
-    }
-
-    /*-- -------------------------- -->
-    <---          LANDING           -->
-    <--- -------------------------- -*/
-
-    .landing-content {
-        padding-top: 280px;
-    }
-
-    .landing-line {
-        top: 500px;
-        height: 2px;
-    }
-
-    .landing-content h1 {
-        font-size: 30px;
-        top: 503px;
-    }
-
-    /*-- -------------------------- -->
-    <---        PHILOSOPHY          -->
-    <--- -------------------------- -*/
-
-    .philosophy-content {
-        padding-top: 120px;
-        width: 430px;
-    }
-
-    /*-- -------------------------- -->
-    <---        SPOTLIGHT-1         -->
-    <--- -------------------------- -*/
-
-    .para-spotlight {
-        height: 500px;
-    }
-
-    /*-- -------------------------- -->
-    <---         LANDSCAPE          -->
-    <--- -------------------------- -*/
-
-    .landscape-content {
-        margin: auto;
-        width: 100%;
-        padding: 80px 0 50px 0;
-    }
-
-    .landscape-content p,
-    .landscape-content h3,
-    .landscape-content h2 {
-        text-align: center;
-    }
-
-    .landscape-images img {
-        height: 350px;
-        margin: 10px 0;
-    }
-
-    /*-- -------------------------- -->
-    <---           ABOUT            -->
-    <--- -------------------------- -*/
-
-    .btn-toggle {
-        margin: auto;
-    }
-
-    .about-content {
-        margin: auto;
-    }
-
-    .about-content p,
-    .about-content h2,
-    .about-content h3 {
-        text-align: center;
-    }
-
-    .about-line {
-        margin: 15px auto;
     }
 
     /*-- -------------------------- -->
@@ -778,137 +505,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    
-}
 
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-
-    .landing-line {
-        position: absolute;
-        margin-top: 80px;
-    }
-
-    .landing-content h1 {
-        margin-top: 80px;
-        font-size: 25px;
-    }
-
-    .landing-line {
-        height: 2px;
-    }
-
-    .landing-content {
-        padding-top: 300px;
-    }
-
-    .side-nav ul a {
-        font-size: 30px;
-    }
-
-    /*-- -------------------------- -->
-    <---          LANDING           -->
-    <--- -------------------------- -*/
-
-    .landing-content {
-        padding-top: 280px;
-    }
-
-    .landing-line {
-        top: 500px;
-        height: 2px;
-    }
-
-    .landing-content h1 {
-        font-size: 30px;
-        top: 503px;
-    }
-
-    /*-- -------------------------- -->
-    <---        PHILOSOPHY          -->
-    <--- -------------------------- -*/
-
-    .philosophy-content {
-        padding-top: 120px;
-        width: 430px;
-    }
-
-    /*-- -------------------------- -->
-    <---        SPOTLIGHT-1         -->
-    <--- -------------------------- -*/
-
-    .para-spotlight {
-        height: 500px;
-    }
-
-    /*-- -------------------------- -->
-    <---         LANDSCAPE          -->
-    <--- -------------------------- -*/
-
-    .landscape-content {
-        margin: auto;
-        width: 80%;
-        padding: 80px 0 50px 0;
-    }
-
-    .landscape-content p,
-    .landscape-content h3,
-    .landscape-content h2 {
-        text-align: center;
-    }
-
-    .landscape-images img {
-        height: 350px;
-        margin: 10px 0;
-    }
-
-    /*-- -------------------------- -->
-    <---           ABOUT            -->
-    <--- -------------------------- -*/
-
-    .btn-toggle {
-        margin: auto;
-    }
-
-    .about-content {
-        margin: auto;
-    }
-
-    .about-content p,
-    .about-content h2,
-    .about-content h3 {
-        text-align: center;
-    }
-
-    .about-line {
-        margin: 15px auto;
-    }
-
-    /*-- -------------------------- -->
-    <---          FOOTER            -->
-    <--- -------------------------- -*/
-
-    .footer-content {
-        height: auto;
-    }
-
-    .footer-item {
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer-item p,
-    .footer-item h3 {
-        text-align: center;
-    }
-
-    .item-line {
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -1060,159 +657,9 @@ footer {
     <---          LANDING           -->
     <--- -------------------------- -*/
 
-    #landing {
-        background: url("../images/landing-img-compressor.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .landing-content {
-        padding-top: 250px;
-    }
-
-    .landing-line {
-        height: 3px;
-        top: 540px;
-    }
-
-    .landing-content h1 {
-        font-size: 40px;
-        top: 545px;
-        letter-spacing: 7px;
-        font-weight: normal;
-    }
-
-    .button-solid {
-        height: 75px;
-        width: 270px;
-        font-size: 25px;
-    }
-
-    .landing-button {
-        font-size: 16px;
-        width: auto;
-        height: auto; 
-    }
-
     /*-- -------------------------- -->
-    <---         PHILOSOPHY         -->
+    <---          LANDING           -->
     <--- -------------------------- -*/
-
-    .remove {
-        display: none;
-    }
-
-    #philosophy {
-        position: relative;
-        height: 650px;
-    }
-
-    .toggle-img {
-        display: block;
-        width: auto;
-        height: auto;
-    }
-
-    .philosophy-content {
-        width: 450px;
-        padding-top: 150px;
-        margin-right: auto;
-        position: relative;
-    }
-
-    img.phil-img {
-        width: 40%;
-        height: inherit;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-    
-    .black-button {
-        font-size: 16px;
-        width: auto;
-        height: auto;
-    }
-
-    .para-spotlight {
-        height: 600px;
-    }
-
-    #spotlight-1,
-    #spotlight-2,
-    #spotlight-3 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    /*-- -------------------------- -->
-    <---          LANDSCAPE         -->
-    <--- -------------------------- -*/
-
-    .landscape-images {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .landscape-images img {
-        width: 48%;
-        margin: 5px;
-        height: 200px;
-    }
-    
-    .landscape-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        width: 80%;
-    }
-
-    .landscape-content h2,
-    .landscape-content h3,
-    .landscape-content p {
-        text-align: center;
-    }
-
-    .landscape-content h3 {
-        font-size: 45px;
-    }
-
-    .landscape-content > .philosophy-line {
-        margin: 15px auto;
-    }
-
-    /*-- -------------------------- -->
-    <---           ABOUT            -->
-    <--- -------------------------- -*/
-    
-    #about {
-        height: auto;
-    }
-
-    .about-content {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .about-content img {
-        width: 500px;
-    }
-
-    .btn-toggle {
-        display: block;
-    }
 
     /*-- -------------------------- -->
     <---           FOOTER           -->
