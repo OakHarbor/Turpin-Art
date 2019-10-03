@@ -350,7 +350,6 @@ body, html, h1, h2, h3, h4, h5, h6 {
     background: url('../images/landscape-3-compressor-crop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -373,14 +372,65 @@ body, html, h1, h2, h3, h4, h5, h6 {
     color: #ffff;
     position: relative;
     z-index: 3;
+    font-size: 50px;
 }
 
 /*-- -------------------------- -->
 <---          LANDING           -->
 <--- -------------------------- -*/
 
-<section>
-    </section>
+#about {
+    position: relative;
+    height: auto;
+}
+
+.anthony:first-child {
+    margin-top: 50px;
+}
+
+.anthony-2 {
+    margin-bottom: 50px;
+}
+
+.anthony img {
+    height: 400px;
+    margin: 30px 0;
+}
+
+.anthony h2 {
+    text-align: left;
+}
+
+.anthony p {
+    font-size: 18px;
+}
+
+.about-line {
+    height: 1px;
+    background: #000;
+    width: 100%;
+    margin: 7px 0 15px 0;
+}
+
+.about-image {
+    margin: 50px 0;
+    width: 100%;
+}
+
+.contact-agent {
+    margin: 30px 0;
+}
+
+.contact-agent h3 {
+    text-align: left;
+}
+
+.contact-line {
+    height: 1px;
+    background: #31AECE;
+    widows: 100%;
+    margin: 10px 0;
+}
 
 /*-- -------------------------- -->
 <---           FOOTER           -->
