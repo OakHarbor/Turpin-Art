@@ -348,6 +348,9 @@ body, html, h1, h2, h3, h4, h5, h6 {
 
 #landing {
     background: url('../images/landscape-3-compressor-crop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -372,11 +375,12 @@ body, html, h1, h2, h3, h4, h5, h6 {
     z-index: 3;
 }
 
-
-
 /*-- -------------------------- -->
 <---          LANDING           -->
 <--- -------------------------- -*/
+
+<section>
+    </section>
 
 /*-- -------------------------- -->
 <---           FOOTER           -->
