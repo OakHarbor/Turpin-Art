@@ -12,7 +12,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="../css/etchings.css">
+	<link rel="stylesheet" href="../css/paintings.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<title>HOME | Turpin Art | Whidbey Island</title>
 </head>
@@ -74,7 +75,131 @@
 		<section id="landing">
 			<div class="hero-dark"></div>
 			<div class="container hero-content">
-				<h1>About Anthony</h1>
+				<h1>Paintings</h1>
+			</div>
+		</section>
+
+		<!-- ============================================ -->
+		<!--              PAINTING BUTTONS                -->
+		<!-- ============================================ -->
+
+		<section id="painting-buttons">
+			<div class="container">
+				<div class="buttons">
+					<button id="structures" 
+							class="button-solid black-button clicked" 
+							type="button" autofocus>
+							Structures
+					</button>
+					<button id="abstract" 
+							class="button-solid black-button" 							
+							type="button">
+							Abstract
+					</button>
+					<button id="oil" 
+							class="button-solid black-button" 
+							type="button">
+							Oil
+					</button>
+					<button id="landscapes" 
+							class="button-solid black-button" 							
+							type="button">
+							Landscapes
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============================================ -->
+		<!--                  PAINTINGS                   -->
+		<!-- ============================================ -->
+
+		<section id="gallery">
+			<div id="structures-content" class="gallery-group gallery-start">
+				<div class="container structures">
+					<img class="medium" src="../images/house-back.jpg" alt="" width="300">
+					<img class="large" src="../images/boat-compressor.jpg" alt="" width="300">
+					<img class="tall" src="../images/house-compressor.jpg" alt="" width="300">
+					<img class="wide" src="../images/etch-3.jpg" alt="" width="300">
+				</div>
+			</div>
+
+			<div id="abstract-content" class="gallery-group group-remove absolute">
+				<div class="container structures">
+					<img src="../images/etch-1.jpg" alt="" width="300">
+					<img src="../images/etch-2.jpg" alt="" width="300">
+					<img src="../images/etch-3.jpg" alt="" width="300">
+					<img src="../images/etch-4.jpg" alt="" width="300">
+				</div>
+			</div>
+
+			<div id="oil-content" class="gallery-group group-remove absolute">
+				<div class="container structures">
+					<img src="../images/landscape-1.jpg" alt="" width="300">
+					<img src="../images/landscape-2.jpg" alt="" width="300">
+					<img src="../images/landscape-3-compressor.jpg" alt="" width="300">
+					<img src="../images/landscape-4.jpg" alt="" width="300">
+				</div>
+			</div>
+
+			<div id="landscapes-content" class="gallery-group group-remove absolute">
+				<div class="container structures">
+					<img src="../images/etch-2.jpg" alt="" width="300">
+					<img src="../images/landscape-2.jpg" alt="" width="300">
+					<img src="../images/house-back.jpg" alt="" width="300">
+					<img src="../images/etch-3.jpg" alt="" width="300">
+				</div>
+			</div>
+		</section>
+
+		<!-- ============================================ -->
+		<!--             DESKTOP PAINTINGS                -->
+		<!-- ============================================ -->
+
+		<section id="gallery-desktop">
+			<div id="structures-d" class="gallery-group gallery-start">
+				<div class="structures-desktop">
+					<div class="one"><img src="../images/landscape-horizontal.jpg" alt="" width="234" height="345"></div>
+					<div class="two"><img src="../images/boat-compressor.jpg" alt="" width="356" height="182"></div>
+					<div class="three"><img src="../images/landscape-horizontal.jpg" alt="" width="234" height="301"></div>
+					<div class="four"><img src="../images/landscape-4.jpg" alt="" width="356" height="198"></div>
+					<div class="five"><img src="../images/landscape-horizontal.jpg" alt="" width="112" height="198"></div>
+					<div class="six"><img src="../images/landscape-3-compressor.jpg" alt="" width="600" height="198"></div>
+					<div class="seven"><img src="../images/landscape-horizontal.jpg" alt="" width="112" height="198"></div>
+				</div>
+			</div>
+			<div id="abstract-d" class="group-remove gallery-group-d absolute">
+				<div class="structures-desktop">
+					<div class="one"><img src="../images/landscape-horizontal.jpg" alt="" width="234" height="345"></div>
+					<div class="two"><img src="../images/etch-4.jpg" alt="" width="356" height="182"></div>
+					<div class="three"><img src="../images/landscape-horizontal.jpg" alt="" width="234" height="301"></div>
+					<div class="four"><img src="../images/etch-3.jpg" alt="" width="356" height="198"></div>
+					<div class="five"><img src="../images/landscape-horizontal.jpg" alt="" width="112" height="198"></div>
+					<div class="six"><img src="../images/landscape-1.jpg" alt="" width="600" height="198"></div>
+					<div class="seven"><img src="../images/landscape-horizontal.jpg" alt="" width="112" height="198"></div>
+				</div>
+			</div>
+			<div id="landscapes-d" class="group-remove gallery-group-d absolute">
+				<div class="structures-desktop">
+					<div class="one"><img src="../images/landscape-horizontal.jpg" alt="" width="234" height="345"></div>
+					<div class="two"><img src="../images/boat-compressor.jpg" alt="" width="356" height="182"></div>
+					<div class="three"><img src="../images/landscape-horizontal.jpg" alt="" width="234" height="301"></div>
+					<div class="four"><img src="../images/landscape-4.jpg" alt="" width="356" height="198"></div>
+					<div class="five"><img src="../images/landscape-horizontal.jpg" alt="" width="112" height="198"></div>
+					<div class="six"><img src="../images/etch-4.jpg" alt="" width="600" height="198"></div>
+					<div class="seven"><img src="../images/landscape-horizontal.jpg" alt="" width="112" height="198"></div>
+				</div>
+			</div>
+			<div id="oil-d" class=" group-remove gallery-group-d absolute">
+				<div class="structures-desktop">
+					<div class="one"><img src="../images/landscape-horizontal.jpg" alt="" width="234" height="345"></div>
+					<div class="two"><img src="../images/boat-compressor.jpg" alt="" width="356" height="182"></div>
+					<div class="three"><img src="../images/landscape-horizontal.jpg" alt="" width="234" height="301"></div>
+					<div class="four"><img src="../images/landscape-4.jpg" alt="" width="356" height="198"></div>
+					<div class="five"><img src="../images/landscape-horizontal.jpg" alt="" width="112" height="198"></div>
+					<div class="six"><img src="../images/landscape-2.jpg" alt="" width="600" height="198"></div>
+					<div class="seven"><img src="../images/landscape-horizontal.jpg" alt="" width="112" height="198"></div>
+				</div>
 			</div>
 		</section>
 
@@ -113,7 +238,6 @@
 			</div>
 		</div>
 	</footer>
-	</div>
     <script src="../nav.js"></script>
 </body>
 </html>

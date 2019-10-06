@@ -22,56 +22,80 @@ function closeSideMenu() {
 
 /* Button click events for the paintings, etchings, and sculptures pages */
 
-/* Button varibale assignment */
-var structures = document.getElementById("structures");
-var abstract = document.getElementById("abstract");
-var oil = document.getElementById("oil");
-var landscapes = document.getElementById("landscapes");
-
 /*Button Gets Clicked */
-structures.addEventListener("click", function(clickStructures));
-abstract.addEventListener("click", function(clickAbstract));
 
-function clickStructures() {
-    /*Structures Button Clicked Style */
-    structures.style.background = "#31AECE";
-    structures.style.color = "#fff";
-    structures.style.border = "none";
+$("#abstract").click(function(){
+    $("#abstract").addClass("clicked");
+    $("#structures").removeClass("clicked");
+    $("#landscapes").removeClass("clicked");
+    $("#oil").removeClass("clicked");
 
-    /* Reset Abstract Button */
-    abstract.style.background = "transparent";
-    abstract.style.color = "#000";
-    abstract.style.border = "#000";
+    /* image group toggle */
+    $("#abstract-content").removeClass("group-remove");
+    $("#structures-content").addClass("group-remove");
+    $("#landscapes-content").addClass("group-remove");
+    $("#oil-content").addClass("group-remove");
 
-    /* Reset Oil Button */
-    oil.style.background = "transparent";
-    oil.style.color = "#000";
-    oil.style.border = "#000";
+    /* This is for the desktop version of the galleries */
+    $("#abstract-d").removeClass("group-remove");
+    $("#structures-d").addClass("group-remove");
+    $("#landscapes-d").addClass("group-remove");
+    $("#oil-d").addClass("group-remove");
+});
 
-    /* Reset Landscape Button */
-    landscape.style.background = "transparent";
-    landscape.style.color = "#000";
-    landscape.style.border = "#000";
-}
+$("#structures").click(function(){
+    $("#structures").addClass("clicked");
+    $("#abstract").removeClass("clicked");
+    $("#landscapes").removeClass("clicked");
+    $("#oil").removeClass("clicked");
+ 
+    /* image group toggle */
+    $("#structures-content").removeClass("group-remove");
+    $("#abstract-content").addClass("group-remove");
+    $("#landscapes-content").addClass("group-remove");
+    $("#oil-content").addClass("group-remove");
 
-function clickAbstract() {
-    /*Abstract Button Clicked Style */
-    abstract.style.background = "#31AECE";
-    abstract.style.color = "#fff";
-    abstract.style.border = "none";
+    /* This is for the desktop version of the galleries */
+    $("#structures-d").removeClass("group-remove");
+    $("#abstract-d").addClass("group-remove");
+    $("#landscapes-d").addClass("group-remove");
+    $("#oil-d").addClass("group-remove");
+});
 
-    /* Reset Structures Button */
-    structures.style.background = "transparent";
-    structures.style.color = "#000";
-    structures.style.border = "#000";
+$("#landscapes").click(function(){
+    $("#landscapes").addClass("clicked");
+    $("#structures").removeClass("clicked");
+    $("#abstract").removeClass("clicked");
+    $("#oil").removeClass("clicked");
 
-    /* Reset Oil Button */
-    oil.style.background = "transparent";
-    oil.style.color = "#000";
-    oil.style.border = "#000";
+    /* image group toggle */
+    $("#landscapes-content").removeClass("group-remove");
+    $("#structures-content").addClass("group-remove");
+    $("#abstract-content").addClass("group-remove");
+    $("#oil-content").addClass("group-remove");
 
-    /* Reset Landscape Button */
-    landscape.style.background = "transparent";
-    landscape.style.color = "#000";
-    landscape.style.border = "#000";
-}
+    /* This is for the desktop version of the galleries */
+    $("#landscapes-d").removeClass("group-remove");
+    $("#structures-d").addClass("group-remove");
+    $("#abstract-d").addClass("group-remove");
+    $("#oil-d").addClass("group-remove");
+});
+
+$("#oil").click(function(){
+    $("#oil").addClass("clicked");
+    $("#structures").removeClass("clicked");
+    $("#landscapes").removeClass("clicked");
+    $("#abstract").removeClass("clicked");
+
+    /* image group toggle */
+    $("#oil-content").removeClass("group-remove");
+    $("#structures-content").addClass("group-remove");
+    $("#landscapes-content").addClass("group-remove");
+    $("#abstract-content").addClass("group-remove");
+
+    /* This is for the desktop version of the galleries */
+    $("#oil-d").removeClass("group-remove");
+    $("#structures-d").addClass("group-remove");
+    $("#landscapes-d").addClass("group-remove");
+    $("#abstract-d").addClass("group-remove");
+});

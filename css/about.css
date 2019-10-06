@@ -695,8 +695,9 @@ footer {
     }
 
     ul.navbar-links {
-        float: right;
-        text-align: right;
+        text-align: center;
+        margin: auto;
+        padding: 0;
     }
 
     .navbar-links {

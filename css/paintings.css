@@ -53,6 +53,10 @@ body, html, h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+#galler-desktop {
+    display: none;
+}
+
 .toggle-img {
     display: none;
 }
@@ -398,19 +402,50 @@ body, html, h1, h2, h3, h4, h5, h6 {
     margin: 40px 0;
 }
 
+button:focus {outline:0;}
+
 /* Default Button Focus */
-button:focus {
+.clicked {
     color: #fff;
     background: #31AECE;
-    border: none;
+    border: none !important;
 }
 
 .structures img {
     margin: 30px 0;
     width: 100%;
+    position: relative;
 }
 
+.gallery-start {
+    position: relative;
+}
 
+#gallery {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.gallery-group {
+    position: relative;
+    height: auto;
+    transition: all .3s ease;
+    top: 0;
+}
+
+.group-remove {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+}
 
 /*-- -------------------------- -->
 <---           FOOTER           -->
@@ -511,6 +546,27 @@ footer {
 
     .side-nav ul a {
         font-size: 30px;
+    }
+
+    #gallery-desktop {
+        display: none;
+    }
+
+    #landing {
+        height: 250px;
+    }
+
+    /*-- -------------------------- -->
+    <---      PAINTINGS BUTTON      -->
+    <--- -------------------------- -*/
+
+    .buttons {
+        max-width: 100%;
+        margin-top: 150px;
+    }
+
+    .buttons button {
+        width: 150px;
     }
 
     /*-- -------------------------- -->
@@ -675,8 +731,9 @@ footer {
     }
 
     ul.navbar-links {
-        float: right;
-        text-align: right;
+        text-align: center;
+        margin: auto;
+        padding: 0;
     }
 
     .navbar-links {
@@ -691,6 +748,128 @@ footer {
     <---          LANDING           -->
     <--- -------------------------- -*/
 
+    #landing {
+        height: 500px;
+        position: relative;
+        background-attachment: fixed;
+
+    }
+
+    .hero-content h1 {
+        font-size: 70px;
+        position: relative;
+        top: 70px;
+        
+    }
+
+    /*-- -------------------------- -->
+    <---         PAINTINGS          -->
+    <--- -------------------------- -*/
+
+    .buttons {
+        max-width: 900px !important;
+        margin: 80px 0 50px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttons button {
+        width: 150px;
+        margin: 0 20px;
+    }
+
+    #gallery {
+        display: none;
+    }
+
+    #gallery-desktop {
+        display: block;
+        position: relative;
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        width: 600px;
+        margin: auto;
+    }
+
+    .gallery-start-d {
+        display: relative;
+    }
+
+    .gallery-group-d {
+        display: absolute;
+        top: 0;
+    }
+    
+    .structures-desktop div {
+        background: #31AECE;
+        display: block;
+    }
+    
+    .structures-content-desktop {
+        height: 700px;
+    }
+    .structures-desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        width: 600px;
+        height: 900px;
+        margin: 50px 0 100px 0
+    }
+
+    #structures-d, #abstract-d,#landscapes-d,#oil-d {
+        transition: all .3s ease;
+    }
+
+    .group-remove {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .one {
+        grid-row: span 3;
+        grid-column: span 2;
+        height: 345px;
+    }
+    
+    .two {
+        grid-row: span 1;
+        grid-column: span 3;
+        height: 182px;
+    }
+    
+    .three {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+    
+    .four {
+        grid-row: 5 / span 2;
+        grid-column: 3 / span 3;
+    }
+    
+    .five {
+        grid-row: 4 / span 2;
+        grid-column: 2 /span 1;
+    }
+    
+    .six {
+        grid-row: 7 / span 2;
+        grid-column: span 5;
+    }
+    
+    .seven {
+        grid-row: 2 / span 2;
+        grid-column: 5 /span 1;
+    }
+
+  
+  
+
     /*-- -------------------------- -->
     <---          LANDING           -->
     <--- -------------------------- -*/
@@ -700,6 +879,8 @@ footer {
     <--- -------------------------- -*/
 
     footer {
+        position: relative;
+        bottom: 0;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;

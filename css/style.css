@@ -190,12 +190,10 @@ body, html, h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 0;
     transition: 0.5s;
-    left: 0
+    left: 0;
     margin: 0;
     width: 0;
     z-index: 7;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
 }
 
 .side-nav ul {
@@ -1044,8 +1042,9 @@ footer {
     }
 
     ul.navbar-links {
-        float: right;
-        text-align: right;
+        text-align: center;
+        margin: auto;
+        padding: 0;
     }
 
     .navbar-links {
