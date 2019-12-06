@@ -1,0 +1,11 @@
+
+
+https://turpinart.netlify.com https://turpinart.com/ 301!
+
+https://turpinart.netlify.com/* https://turpinart.com/:splat 301!
+
+https://turpinart.com https://turpinart.com/
+
+turpinart.com https://turpinart.com/ 301!
+
+https://elastic-leavitt-3252e0.netlify.com/* https://turpinart.com/:splat 301!
