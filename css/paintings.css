@@ -413,6 +413,8 @@ button:focus {outline:0;}
     color: #fff;
     background: #31AECE;
     border: none !important;
+    display: block;
+    visibility: visible;
 }
 
 .structures img {
@@ -444,12 +446,22 @@ button:focus {outline:0;}
 .group-remove {
     opacity: 0;
     visibility: hidden;
+    display: none;
 }
 
 .absolute {
     position: absolute;
     top: 0;
 }
+
+.structures img {
+    height: auto;
+}
+
+.strucrures {
+    height: auto;
+}
+    
 
 /*-- -------------------------- -->
 <---           FOOTER           -->
@@ -788,12 +800,17 @@ footer {
         display: none;
     }
 
+    #abstract-d {
+        margin: auto;
+    }
+
     #gallery-desktop {
         display: block;
         position: relative;
         display: flex;
         flex-direction: row; 
         align-items: center;
+        justify-content: center;
         width: 600px;
         margin: auto;
     }
@@ -805,11 +822,17 @@ footer {
     .gallery-group-d {
         display: absolute;
         top: 0;
+        margin: auto;
     }
     
     .structures-desktop div {
         background: #31AECE;
         display: block;
+    }
+
+    .structures-desktop img {
+        height: 100%;
+        width: 100%;
     }
     
     .structures-content-desktop {
@@ -818,11 +841,11 @@ footer {
     .structures-desktop {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
-        width: 600px;
-        height: 900px;
-        margin: 50px 0 100px 0
+        width: 800px;
+        height: 1800px;
+        margin: 50px auto 100px auto;
     }
 
     #structures-d, #abstract-d,#landscapes-d,#oil-d {
@@ -834,16 +857,15 @@ footer {
         visibility: hidden;
     }
     
+    /* Abstraction */
     .one {
         grid-row: span 3;
         grid-column: span 2;
-        height: 345px;
     }
     
     .two {
         grid-row: span 1;
         grid-column: span 3;
-        height: 182px;
     }
     
     .three {
@@ -852,8 +874,8 @@ footer {
     }
     
     .four {
-        grid-row: 5 / span 2;
-        grid-column: 3 / span 3;
+        grid-row: 5 / span 3;
+        grid-column: 3 / span 2;
     }
     
     .five {
@@ -862,13 +884,133 @@ footer {
     }
     
     .six {
-        grid-row: 7 / span 2;
-        grid-column: span 5;
+        grid-row: 7 / span 4;
+        grid-column: span 2;
     }
     
     .seven {
         grid-row: 2 / span 2;
         grid-column: 5 /span 1;
+    }
+
+    .eight {
+        grid-row: 6 / span 2;
+        grid-column: 5 /span 1;
+    }
+
+    .nine {
+        grid-row: 8 / span 3;
+        grid-column: 3 / span 3;
+    }
+
+    /* Structures */
+
+    .s-one {
+        grid-row: span 2;
+        grid-column: span 4;
+    }
+
+    .s-two {
+        grid-row: span ;
+        grid-column: span 2;
+    }
+
+    .s-three {
+        grid-row: span ;
+        grid-column: span 3;
+    }
+
+    .s-four {
+        grid-row: span ;
+        grid-column: 2 / span 3;
+    }
+
+    .s-five {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    .s-six {
+        grid-row: span ;
+        grid-column: span 3;
+    }
+
+    .s-seven {
+        grid-row: span 2;
+        grid-column: span 4;
+    }
+
+    .s-eight {
+        
+    }
+
+    .s-nine {
+        
+    }
+
+    .s-ten {
+        grid-column: span 2;
+    }
+
+    .s-eleven {
+        grid-column: span 3;
+    }
+
+    .s-twelve {
+        
+    }
+
+    .s-thirteen {
+        
+    }
+
+    /* Landscapes */
+
+    .l-one {
+        grid-row: span 2;
+        grid-column: span 4;
+    }
+
+    .l-two {
+        grid-row: span ;
+        grid-column: span 2;
+    }
+
+    .l-three {
+        grid-row: span ;
+        grid-column: span 3;
+    }
+
+    .l-four {
+        grid-row: span ;
+        grid-column: 2 / span 3;
+    }
+
+    .l-five {
+        grid-row: span ;
+        grid-column: span 3;
+    }
+
+    .l-six {
+        grid-row: span ;
+        grid-column: span 2;
+    }
+
+    .l-seven {
+        grid-row: span 2;
+        grid-column: 2 / span 3;
+    }
+
+    .l-eight {
+        
+    }
+
+    .l-nine {
+        
+    }
+
+    .l-ten {
+        grid-column: span 2;
     }
 
   

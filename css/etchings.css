@@ -451,6 +451,10 @@ button:focus {outline:0;}
     top: 0;
 }
 
+.structures img {
+    height: auto;
+}
+
 /*-- -------------------------- -->
 <---           FOOTER           -->
 <--- -------------------------- -*/
@@ -793,6 +797,7 @@ footer {
         position: relative;
         display: flex;
         flex-direction: row; 
+        justify-content: center;
         align-items: center;
         width: 600px;
         margin: auto;
@@ -806,10 +811,15 @@ footer {
         display: absolute;
         top: 0;
     }
-    
+
     .structures-desktop div {
         background: #31AECE;
         display: block;
+    }
+
+    .structures-desktop img {
+        height: 100%;
+        width: 100%;
     }
     
     .structures-content-desktop {
@@ -818,11 +828,11 @@ footer {
     .structures-desktop {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
-        width: 600px;
-        height: 900px;
-        margin: 50px 0 100px 0
+        width: 800px;
+        height: 1300px;
+        margin: 50px auto 100px auto;
     }
 
     #structures-d, #abstract-d,#landscapes-d,#oil-d {
@@ -834,41 +844,47 @@ footer {
         visibility: hidden;
     }
     
-    .one {
-        grid-row: span 3;
+    .d-one {
+        grid-row: span 2;
         grid-column: span 2;
-        height: 345px;
     }
     
-    .two {
-        grid-row: span 1;
+    .d-two {
+        grid-row: span ;
         grid-column: span 3;
-        height: 182px;
     }
     
-    .three {
-        grid-row: span 3;
+    .d-three {
+        grid-row: span ;
+        grid-column: span 3;
+    }
+    
+    .d-four {
+        grid-row: span ;
+        grid-column: span 3;
+    }
+    
+    .d-five {
+        grid-row: span ;
         grid-column: span 2;
     }
     
-    .four {
-        grid-row: 5 / span 2;
-        grid-column: 3 / span 3;
+    .d-six {
+        grid-row: span ;
+        grid-column: 2 / span 4;
     }
     
-    .five {
-        grid-row: 4 / span 2;
-        grid-column: 2 /span 1;
+    .d-seven {
+        grid-row: span ;
+        grid-column: span 3;
     }
-    
-    .six {
-        grid-row: 7 / span 2;
-        grid-column: span 5;
+
+    .d-eight {
+        grid-column: span 2;
     }
-    
-    .seven {
-        grid-row: 2 / span 2;
-        grid-column: 5 /span 1;
+
+    .d-nine {
+        grid-column: 3 / span 2;
     }
 
   
