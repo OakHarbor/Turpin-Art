@@ -386,8 +386,10 @@ body, html, h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
-#gallery-desktop {
-    display: none;
+#gallery-desktop img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
 }
 
 .buttons button {
@@ -556,12 +558,9 @@ footer {
         font-size: 30px;
     }
 
-    #gallery-desktop {
-        display: none;
-    }
-
     #landing {
         height: 250px;
+        margin-bottom: 100px;
     }
 
     /*-- -------------------------- -->
@@ -762,7 +761,7 @@ footer {
         height: 500px;
         position: relative;
         background-attachment: fixed;
-
+        margin-bottom: 200px;
     }
 
     .hero-content h1 {
@@ -814,9 +813,8 @@ footer {
         top: 0;
     }
 
-    .structures-desktop div {
-        background: #31AECE;
-        display: block;
+    .structures-desktop {
+        width: 1500px;
     }
 
     .structures-desktop img {
@@ -826,15 +824,6 @@ footer {
     
     .structures-content-desktop {
         height: 700px;
-    }
-    .structures-desktop {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
-        width: 800px;
-        height: 1300px;
-        margin: 50px auto 100px auto;
     }
 
     #structures-d, #abstract-d,#landscapes-d,#oil-d {
@@ -847,46 +836,39 @@ footer {
     }
     
     .d-one {
-        grid-row: span 2;
-        grid-column: span 2;
+
     }
     
     .d-two {
-        grid-row: span ;
-        grid-column: span 3;
+
     }
     
     .d-three {
-        grid-row: span ;
-        grid-column: span 3;
+        
     }
     
     .d-four {
-        grid-row: span ;
-        grid-column: span 3;
+        
     }
     
     .d-five {
-        grid-row: span ;
-        grid-column: span 2;
+
     }
     
     .d-six {
-        grid-row: span ;
-        grid-column: 2 / span 4;
+
     }
     
     .d-seven {
-        grid-row: span ;
-        grid-column: span 3;
+
     }
 
     .d-eight {
-        grid-column: span 2;
+
     }
 
     .d-nine {
-        grid-column: 3 / span 2;
+
     }
 
   

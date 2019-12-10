@@ -26,6 +26,7 @@ function closeSideMenu() {
 
 $("#abstract").click(function(){
     $("#abstract").addClass("clicked");
+    $("#abstract").addClass("clicked");
     $("#structures").removeClass("clicked");
     $("#landscapes").removeClass("clicked");
     $("#oil").removeClass("clicked");
