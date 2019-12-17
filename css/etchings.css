@@ -814,7 +814,9 @@ footer {
     }
 
     .structures-desktop {
-        width: 1500px;
+        width: 1100px;
+        height: 2800px;
+        position: relative;
     }
 
     .structures-desktop img {
@@ -835,40 +837,66 @@ footer {
         visibility: hidden;
     }
     
-    .d-one {
-
+    .one {
+        width: 400px !important;
+        position: absolute;
+        left: 0;
     }
     
-    .d-two {
-
+    .two {
+        position: absolute;
+        top: 790px;
+        width: 100% !important;
+        left: 0;
     }
     
-    .d-three {
-        
+    .three {
+        position: absolute;
+        width: 700px !important;
+        right: 0;
+        top: 140px;
     }
     
-    .d-four {
-        
+    .four {
+        position: absolute;
+        top: 457px;
+        width: 500px !important;
+        left: 0;
     }
     
-    .d-five {
-
+    .five {
+        position: absolute;
+        top: 400px;
+        width: 600px !important;
+        right: 0;
     }
     
-    .d-six {
-
+    .six {
+        position: absolute;
+        top: 1270px;
+        width: 100% !important;
+        left: 0;
     }
     
-    .d-seven {
-
+    .seven {
+        position: absolute;
+        top: 1820px;
+        width: 100% !important;
+        left: 0;
     }
 
-    .d-eight {
-
+    .eight {
+        position: absolute;
+        top: 2300px;
+        width: 600px !important;
+        left: 0;
     }
 
-    .d-nine {
-
+    .nine {
+        position: absolute;
+        top: 2420px;
+        width: 500px !important;
+        right: 0;
     }
 
   
