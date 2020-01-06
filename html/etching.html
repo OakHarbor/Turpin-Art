@@ -7,8 +7,8 @@
 
 	<meta name="title" content="">
 	<meta name="description" content="">
-	<meta name="keywords" content=""> 
-	
+  	<meta name="keywords" content="">
+
 	<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png?v1">
 	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png?v1">
@@ -20,7 +20,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="../css/contact.css">
+	<link rel="stylesheet" href="../css/etchings.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<title>HOME | Turpin Art | Whidbey Island</title>
 </head>
@@ -49,9 +50,9 @@
 				<li><a href="about.html">About</a></li>
 				<li><a href="paintings.html">Painting</a></li>
 				<li><a href="etchings.html">Drawing</a></li>
-				<li><a href="skulptures.html">Sculpture</a></li>
-				<li><a href="etching.html">Etching</a></li>
-				<li><a id="active" href="contact.html">Contact</a></li>
+                <li><a href="skulptures.html">Sculpture</a></li>
+                <li><a id="active" href="etching.html">Etching</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -70,9 +71,9 @@
             <li class="nav-item"><a href="about.html">About</a></li>
             <li class="nav-item"><a href="paintings.html">Painting</a></li>
             <li class="nav-item"><a href="etchings.html">Drawing</a></li>
-			<li class="nav-item"><a href="skulptures.html">Sculpture</a></li>
-			<li class="nav-item"><a href="etching.html">Etching</a></li>
-            <li class="nav-item"><a class="side-active" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a href="skulptures.html">Sculpture</a></li>
+            <li class="nav-item"><a class="side-active" href="etching.html">Etching</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
@@ -84,66 +85,22 @@
 		<section id="landing">
 			<div class="hero-dark"></div>
 			<div class="container hero-content">
-				<h1>Contact</h1>
+				<h1>Etching</h1>
 			</div>
 		</section>
 
 		<!-- ============================================ -->
-		<!--                   FORM                       -->
+		<!--             DESKTOP PAINTINGS                -->
 		<!-- ============================================ -->
 
-		<section id="form">
-			<div class="form-dark"></div>
-			<div class="form-container">  
-				<form id="contact" name="Contact Form" method="post" data-netlify="true">
-				<h3>CONTACT ANTHONY</h3>
-				<h4>If you have any questions about purchasing or just want to leave a nice comment</h4>
-				<p>
-					<input name="name" placeholder="Your name" type="text" tabindex="1" required>
-				</p>
-				<p>
-					<input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
-				</p>
-				<p>
-					<input name="phone" placeholder="Your Phone Number" type="tel" tabindex="3" required>
-				</p>
-				<p>
-					<textarea name="message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
-				</p>
-				<p>
-					<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-				</p>
-				</form>
-			</div>
-			<div class="or container">
-				<div class="or-line"></div>
-				<p>OR</p>
-				<div class="or-line"></div>
-			</div>
-			<div class="contact-alt">
-				<div class="container contact-alt-flex">
-					<div class="c-phone">
-						<div class="outter">
-							<div class="inner">
-								<i class="fas fa-phone"></i>
-							</div>
-						</div>
-						<div class="info">
-							<h4>CALL</h4>
-							<p>(360) 320-1014</p>
-						</div>
-					</div>
-					<div class="c-phone">
-						<div class="outter">
-							<div class="inner">
-								<i class="far fa-envelope"></i>
-							</div>
-						</div>
-						<div class="info">
-							<h4>EMAIL</h4>
-							<p>trpna@comcast.net</p>
-						</div>
-					</div>
+		<section id="gallery-desktop">
+			<div id="structures-d" class="gallery-group gallery-start">
+				<div class="structures-desktop">
+					<img class="one" src="../images/etching-1.jpg" alt="pencil drawing of a barren tree" width="234" height="345">
+					<img class="two" src="../images/etching-2.jpg" alt="old vintage car that has seen better days" width="356" height="182">
+					<img class="three" src="../images/etching-3.jpg" alt="old boat drawn in pencil" width="234" height="301">
+					<img class="four"src="../images/etching-4.jpg" alt="old car drawn in pencil" width="356" height="198">
+					<img class="five" src="../images/etching-5.jpg" alt="mechanical things drawn in pencil" width="112" height="198">
 				</div>
 			</div>
 		</section>
@@ -184,7 +141,6 @@
 			</div>
 		</div>
 	</footer>
-	</div>
     <script src="../nav.js"></script>
 </body>
 </html>

@@ -408,6 +408,7 @@ body, html, h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     position: relative;
     z-index: -2;
+    margin-bottom: 100px;
 }
 
 .hero-dark {
@@ -517,6 +518,10 @@ button:focus {outline:0;}
     top: 0;
 }
 
+.structures img {
+    height: auto;
+}
+
 /*-- -------------------------- -->
 <---           FOOTER           -->
 <--- -------------------------- -*/
@@ -526,6 +531,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-top: 100px;
 }
 
 .footer-item {
@@ -639,6 +645,7 @@ footer {
     .buttons button {
         width: 150px;
     }
+
 
     /*-- -------------------------- -->
     <---          FOOTER            -->
@@ -848,10 +855,10 @@ footer {
     <--- -------------------------- -*/
 
     #landing {
-        height: 600px;
+        height: 500px;
         position: relative;
         background-attachment: fixed;
-        margin-bottom: 200px !important;
+        margin-bottom: 200px;
     }
 
     .hero-content h1 {
@@ -894,18 +901,46 @@ footer {
 
     #gallery-desktop {
         display: block;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; 
+        -webkit-box-pack: center; 
+            -ms-flex-pack: center; 
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 600px;
+        margin: auto;
     }
-    
+
+    .gallery-start-d {
+        display: relative;
+    }
+
+    .gallery-group-d {
+        display: absolute;
+        top: 0;
+    }
+
     .structures-desktop {
         width: 1100px;
-        margin: auto;
+        height: 2000px;
         position: relative;
     }
 
     .structures-desktop img {
+        height: 100%;
         width: 100%;
-        height: auto;
-        margin-bottom: 80px;
+    }
+    
+    .structures-content-desktop {
+        height: 700px;
     }
 
     #structures-d, #abstract-d,#landscapes-d,#oil-d {
@@ -918,85 +953,67 @@ footer {
         opacity: 0;
         visibility: hidden;
     }
-
-    .drawing-desk {
-        height: 5400px;
-    }
     
     .one {
+        width: 400px !important;
         position: absolute;
         left: 0;
-        width: 500px !important;
     }
     
     .two {
         position: absolute;
-        right: 0;
-        width: 600px !important;
+        top: 940px;
+        width: 100% !important;
+        left: 0;
     }
     
     .three {
         position: absolute;
+        width: 700px !important;
         right: 0;
-        width: 600px !important;
-        top: 1040px;
-        height: 1163px !important;
+        top: 0px;
     }
     
     .four {
         position: absolute;
-        left: 0;
+        top: 500px;
         width: 500px !important;
-        top: 530px;
+        left: 0;
     }
     
     .five {
         position: absolute;
-        left: 0;
-        width: 500px !important;
-        top: 1100px;
+        top: 500px;
+        width: 600px !important;
+        right: 0;
     }
     
     .six {
         position: absolute;
-        right: 0;
-        top: 2220px;
+        top: 1270px;
         width: 100% !important;
+        left: 0;
     }
     
     .seven {
         position: absolute;
-        right: 0;
-        top: 3080px;
-        width: 500px !important;
+        top: 1820px;
+        width: 100% !important;
+        left: 0;
     }
 
     .eight {
         position: absolute;
-        left: 0;
-        top: 3080px;
+        top: 2300px;
         width: 600px !important;
+        left: 0;
     }
 
     .nine {
         position: absolute;
-        left: 0;
-        top: 4580px;
-        width: 100% !important;
-    }
-
-    .ten {
-        position: absolute;
-        left: 0;
-        top: 4850px;
-        width: 100% !important;
-    }
-
-    .eleven {
-        position: absolute;
-        left: 0;
-        top: 4108px;
-        width: 600px !important;
+        top: 2420px;
+        width: 500px !important;
+        right: 0;
     }
 
   
