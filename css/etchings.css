@@ -408,6 +408,7 @@ body, html, h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     position: relative;
     z-index: -2;
+    margin-bottom: 100px;
 }
 
 .hero-dark {
@@ -530,6 +531,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-top: 100px;
 }
 
 .footer-item {
@@ -801,6 +803,8 @@ footer {
 
     .navbar-menu {
         height: 100px;
+        max-width: 1100px;
+        width: 1100px;
     }
 
     .navbar-links li {

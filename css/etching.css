@@ -629,7 +629,7 @@ footer {
     }
 
     #landing {
-        height: 250px;
+        height: 500px;
         margin-bottom: 100px;
     }
 
@@ -804,6 +804,8 @@ footer {
 
     .navbar-menu {
         height: 100px;
+        max-width: 1100px;
+        width: 1100px;
     }
 
     .navbar-links li {
@@ -930,7 +932,7 @@ footer {
 
     .structures-desktop {
         width: 1100px;
-        height: 2000px;
+        height: 1900px;
         position: relative;
     }
 
