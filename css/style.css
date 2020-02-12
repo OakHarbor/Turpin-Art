@@ -1276,7 +1276,8 @@ footer {
 
     #studio-show img {
         width: 300px;
-        height: auto;
+        height: 469px;
+        max-height: 469px;
     }
 
     #studio-show h2 {
